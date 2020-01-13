@@ -102,10 +102,10 @@ Please compare the numbers of frames, just in case.
 
 ## Personal Notes for Install
 1. Create Anaconda Virtual Environment(venv) for Openface
-   $ conda create -n openface-dev1
+   * $ conda create -n openface-dev1
 
 2. Activate the venv (I named it ad 'openface-dev1')
-   $ activate openface-dev1
+   * $ activate openface-dev1
 
 3. Install Python 2.7
    $ conda install python=2.7
