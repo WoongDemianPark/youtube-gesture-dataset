@@ -102,19 +102,19 @@ Please compare the numbers of frames, just in case.
 
 ## Personal Notes for Install
 // Create Anaconda Virtual Environment(venv) for Openface
-conda create -n openface-dev1
+$ conda create -n openface-dev1
 
 // Activate the venv (I named it ad 'openface-dev1')
-activate openface-dev1
+$ activate openface-dev1
 
 // Install Python 2.7
-conda install python=2.7
+$ conda install python=2.7
 
 // Install OpenCV
-conda install opencv=2.4.11
+$ conda install opencv=2.4.11
 
 // Install dependencies
-pip install numpy scipy pandas==0.17.1 scikit-learn==0.17.1 scikit-image dlib nose nolearn
+$ pip install numpy scipy pandas==0.17.1 scikit-learn==0.17.1 scikit-image dlib nose nolearn
 
 // Install Torch
 $ cd ~/
