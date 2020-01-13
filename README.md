@@ -102,46 +102,46 @@ Please compare the numbers of frames, just in case.
 
 ## Personal Notes for Install
 1. Create Anaconda Virtual Environment(venv) for Openface
- $ conda create -n openface-dev1
+   $ conda create -n openface-dev1
 
 2. Activate the venv (I named it ad 'openface-dev1')
- $ activate openface-dev1
+   $ activate openface-dev1
 
 3. Install Python 2.7
- $ conda install python=2.7
+   $ conda install python=2.7
 
 4. Install OpenCV
- $ conda install opencv=2.4.11
+   $ conda install opencv=2.4.11
 
 5. Install dependencies
- $ pip install numpy scipy pandas==0.17.1 scikit-learn==0.17.1 scikit-image dlib nose nolearn
+   $ pip install numpy scipy pandas==0.17.1 scikit-learn==0.17.1 scikit-image dlib nose nolearn
 
 6. Install Torch
- $ cd ~/
- $ git clone https://github.com/torch/distro.git ~/torch
- $ bash install-deps
- $ ./install.sh
- $ source ~/.bashrc
+   $ cd ~/
+   $ git clone https://github.com/torch/distro.git ~/torch
+   $ bash install-deps
+   $ ./install.sh
+   $ source ~/.bashrc
 
 7. Manually install some dependencies
- $ luarocks install torch
- $ luarocks install nn
- $ luarocks install dpnn
+   $ luarocks install torch
+   $ luarocks install nn
+   $ luarocks install dpnn
  
-8./ Install Openface requirements
- $ cd ~/
- $ git clone https://github.com/cmusatyalab/openface.git
- $ cd ~/openface 
- $ python setup.py install
+8. / Install Openface requirements
+   $ cd ~/
+   $ git clone https://github.com/cmusatyalab/openface.git
+   $ cd ~/openface 
+   $ python setup.py install
 
 9. Download the models
- $ cd ~/openface
- $ ./models/get-models.sh
+   $ cd ~/openface
+   $ ./models/get-models.sh
 
 10. Test Open Face
- $ ./demos/compare.py images/examples/{lennon*,clapton*}
- $ ./demos/classifier.py infer models/openface/celeb-classifier.nn4.small2.v1.pkl ./images/examples/carell.jpg
- $ ./demos/web/start-servers.sh
+   $ ./demos/compare.py images/examples/{lennon*,clapton*}
+   $ ./demos/classifier.py infer models/openface/celeb-classifier.nn4.small2.v1.pkl ./images/examples/carell.jpg
+   $ ./demos/web/start-servers.sh
 
 
 
