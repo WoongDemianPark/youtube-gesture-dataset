@@ -123,7 +123,7 @@ Please compare the numbers of frames, just in case.
    
 5. Install dependencies
    ```
-   $ pip install numpy scipy pandas==0.17.1 scikit-learn==0.17.1 scikit-image dlib nose nolearn
+   $ pip install numpy scipy pandas==0.17.1 scikit-learn==0.17.1 scikit-image dlib nose nolearn tqdm google-api-python-client webvtt-py youtube-dl scenedetect
    ```
 
 6. Install Torch
