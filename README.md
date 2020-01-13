@@ -100,6 +100,51 @@ Some videos may not match to the extracted poses that we provided if the videos 
 Please compare the numbers of frames, just in case.
 
 
+## Personal Notes for Install
+// Create Anaconda Virtual Environment(venv) for Openface
+conda create -n openface-dev1
+
+// Activate the venv (I named it ad 'openface-dev1')
+activate openface-dev1
+
+// Install Python 2.7
+conda install python=2.7
+
+// Install OpenCV
+conda install opencv=2.4.11
+
+// Install dependencies
+pip install numpy scipy pandas==0.17.1 scikit-learn==0.17.1 scikit-image dlib nose nolearn
+
+// Install Torch
+$ cd ~/
+$ git clone https://github.com/torch/distro.git ~/torch
+$ bash install-deps
+$ ./install.sh
+$ source ~/.bashrc
+
+// Manually install some dependencies
+$ luarocks install torch
+$ luarocks install nn
+$ luarocks install dpnn
+
+// Install Openface requirements
+$ cd ~/
+$ git clone https://github.com/cmusatyalab/openface.git
+$ cd ~/openface 
+$ python setup.py install
+
+// Download the models
+$ cd ~/openface
+$ ./models/get-models.sh
+
+// Test Open Face
+$ ./demos/compare.py images/examples/{lennon*,clapton*}
+$ ./demos/classifier.py infer models/openface/celeb-classifier.nn4.small2.v1.pkl ./images/examples/carell.jpg
+$ ./demos/web/start-servers.sh
+
+
+
 ## Citation 
 
 If our code or dataset is helpful, please kindly cite the following paper:
